@@ -1,0 +1,64 @@
+
+// Font Weight 
+@mixin fontWeight($weight) {
+  font-weight:  $weight;
+}
+
+// Font Size
+@mixin fontSize($fontSize) {
+  font-size:  $fontSize;
+}
+
+// Transitions
+@mixin transition($transitionTime) {
+	-webkit-transition: all $transitionTime ease;
+	transition: all $transitionTime ease;
+}
+// Box Shadw
+@mixin boxShadow() {
+	box-shadow: 0 0 15px #e4e4e4;
+}
+
+// Flex Box
+@mixin d-flex() {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin flex-wrap() {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+@mixin justify-content($value) {
+	-webkit-box-pack: $value;
+	-ms-flex-pack: $value;
+	justify-content: $value;
+}
+
+@mixin align-items($value) {
+	-webkit-box-align: $value;
+	-ms-flex-align: $value;
+	-ms-grid-row-align: $value;
+	align-items: $value;
+}
+
+@mixin flex-direction($value) {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: $value;
+	flex-direction: $value;
+}
+
+
+// Opacity
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+
+
+
